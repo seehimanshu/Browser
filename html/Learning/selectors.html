@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Selector</title>
+    <style>
+        p{
+            color: blueviolet;
+        }
+        .textbook{
+            color: black;
+        }
+        .largetext{
+            font-size: 10px;
+        }
+        .textbook.largetext{
+            background-color: aqua;
+        }
+        #unique{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 4;
+        }
+        h2,h4{
+            color: rgb(255, 0, 0);
+        }
+        div p span{
+            color: chartreuse;
+        }
+        div>p>span{
+            color: burlywood;
+            background-color: black;
+        }
+
+    </style>
+   
+</head>
+<body>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, natus, aliquid dolores in officiis voluptatem aut eaque, magni quisquam accusamus et. Facilis nemo impedit natus, quia nobis est optio explicabo?
+    </p>
+    <p class="textbook">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, dolore! Tempore culpa voluptatem ducimus! Rerum velit quod modi, omnis nihil non nobis quas, voluptatum, dolore fuga dicta. Beatae, architecto voluptatibus?</p>
+
+    <div>
+        <h1>Id selector</h1>
+        <p class="textbook largetext"> 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores tenetur dolorum rerum unde, earum ex ipsum saepe possimus debitis perferendis libero maxime blanditiis, explicabo corporis. Atque officiis voluptates accusantium suscipit?
+        </p>
+        <p class="largetext" id="unique"> 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores tenetur dolorum rerum unde, earum ex ipsum saepe possimus debitis perferendis libero maxime blanditiis, explicabo corporis. Atque officiis voluptates accusantium suscipit?
+        </p>
+        <div>
+            <h1>css selector</h1>
+            <p class="textbook largetext"> 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores tenetur dolorum rerum unde, earum ex ipsum saepe possimus debitis perferendis libero maxime blanditiis, explicabo corporis. Atque officiis voluptates accusantium suscipit?
+            </p>
+            <p class="largetext "> 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores tenetur dolorum rerum unde, earum ex ipsum saepe possimus debitis perferendis libero maxime blanditiis, explicabo corporis. Atque officiis voluptates accusantium suscipit?
+            </p>
+    </div>
+    <h2>i am h2</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga voluptatibus praesentium eos illo quasi quidem consequatur, quae, blanditiis accusamus repellendus laudantium quis beatae veritatis impedit magni facilis itaque enim at.</p>
+    <h4>i am h4</h4>
+
+    <div>
+        <p>
+            <span>i am child</span>
+        </p>
+    </div>
+    <div>
+        <span>
+            <p>
+                <span>i am hero</span>
+            </p>
+        </span>
+    </div>
+</body>
+</html>
