@@ -11,7 +11,7 @@ addBtn.addEventListener('click',function(){
         modalCont.style.display="none";
 
     }
-    isModalPresent=!isModalPresent;
+    isModalPresent=!isModalPresent; //toggling effect
 })
 
 const allPriorityColor=document.querySelectorAll(".priority-color");
@@ -24,3 +24,4 @@ allPriorityColor.forEach(function(colorElement){
         colorElement.classList.add("active");
     });
 });
+
